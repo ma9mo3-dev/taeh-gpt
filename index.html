@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TAEH GPT</title>
+
+  <!-- 🌐 وسوم المشاركة -->
+  <meta property="og:title" content="TAEH GPT - دردش مع الذكاء الاصطناعي" />
+  <meta property="og:description" content="مساعد ذكي يجيب على أسئلتك باللغة العربية باستخدام تقنيات GPT. جربه الآن!" />
+  <meta property="og:image" content="https://files.catbox.moe/zrozcc.jpg" />
+  <meta property="og:url" content="https://taeh-gpt.netlify.app" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#243b55" />
+
+  <!-- 🔠 الخطوط -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- 🎨 التنسيقات -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1>مساعد تائه الذكي 🤖</h1>
+    </header>
+
+    <div class="chat-box" id="chat-box">
+      <div class="ai-message welcome">
+        مرحباً! كيف يمكنني مساعدتك اليوم؟
+      </div>
+
+      <div class="quick-replies" id="quick-replies">
+        <button class="reply-btn">ما هو الذكاء الاصطناعي؟</button>
+        <button class="reply-btn">اعطني كود بوت واتساب</button>
+        <button class="reply-btn">كيف اصبح مبرمج؟</button>
+      </div>
+    </div>
+
+    <form id="chat-form" class="chat-input-area">
+      <input type="text" id="user-input" placeholder="اكتب سؤالك هنا..." autocomplete="off" />
+      <button type="submit" id="send-btn">إرسال</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+    </html>
