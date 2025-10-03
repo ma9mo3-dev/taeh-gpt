@@ -1,0 +1,149 @@
+/* الخط العام */
+* {
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, #141e30, #243b55);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.chat-header {
+  background-color: #1e1e2f;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+.chat-header h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #00e5ff;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #212139;
+}
+
+.ai-message, .user-message {
+  background-color: #2a2a40;
+  padding: 10px 15px;
+  border-radius: 12px;
+  margin: 8px 0;
+  width: fit-content;
+  max-width: 85%;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #0077b6;
+  color: #fff;
+}
+
+.ai-message {
+  align-self: flex-start;
+  background-color: #3a3a55;
+}
+
+.welcome {
+  background-color: #264653;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.chat-input-area {
+  display: flex;
+  padding: 10px;
+  background-color: #1e1e2f;
+  border-top: 1px solid #444;
+}
+
+.chat-input-area input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-left: 10px;
+  font-size: 16px;
+  background-color: #2a2a40;
+  color: #fff;
+}
+
+.chat-input-area input:focus {
+  outline: none;
+  background-color: #333354;
+}
+
+#send-btn {
+  background-color: #00e5ff;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#send-btn:hover {
+  background-color: #00c3e0;
+}
+
+.quick-replies {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.reply-btn {
+  background-color: #3a3a55;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.reply-btn:hover {
+  background-color: #00e5ff;
+  color: #000;
+}
+
+/* للجوال */
+@media (max-width: 600px) {
+  .chat-header h1 {
+    font-size: 18px;
+  }
+
+  .chat-input-area input {
+    font-size: 14px;
+  }
+
+  .reply-btn {
+    font-size: 13px;
+    padding: 7px 12px;
+  }
+}
